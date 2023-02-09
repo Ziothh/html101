@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- CSS stylesheet link -->
+        <!-- Basic -->
+        <link rel="stylesheet" href="./styles/base.css" />
+        <!-- Nav -->
+        <link rel="stylesheet" href="./styles/nav.css" />
+
+        <!-- Sections -->
+        <link rel="stylesheet" href="./styles/grid.css" />
+        <link rel="stylesheet" href="./styles/flex.css" />
+        <link rel="stylesheet" href="./styles/margin-padding.css" />
+
+        <title>CSS Examples</title>
+    </head>
+    <body>
+        <nav>
+            <a href="#" class="logo">CSS</a>
+            <ol>
+                <li>
+                    <a href="#grid">Grid</a>
+                </li>
+                <li>
+                    <a href="#flex">Flex</a>
+                </li>
+                <li>
+                    <a href="#margin-padding">Margin & Padding</a>
+                </li>
+            </ol>
+        </nav>
+        <div class="page-container">
+            <h1>CSS Examples</h1>
+            <section id="grid">
+                <h2>display: grid;</h2>
+                <div class="sub-section">
+                    <h3>3-column grid</h3>
+                    <div class="grid grid-c3">
+                        <div style="background: tomato">1</div>
+                        <div style="background: turquoise">2</div>
+                        <div style="background: tan">3</div>
+                        <div style="background: thistle">4</div>
+                        <div style="background: steelblue">5</div>
+                    </div>
+                </div>
+                <div class="sub-section">
+                    <h3>3-row grid</h3>
+                    <div class="grid grid-r3">
+                        <div style="background: tomato">1</div>
+                        <div style="background: turquoise">2</div>
+                        <div style="background: tan">3</div>
+                        <div style="background: thistle">4</div>
+                        <div style="background: steelblue">5</div>
+                    </div>
+                </div>
+                <div class="sub-section">
+                    <h3>4x3-row grid & gap: 10px;</h3>
+                    <div class="grid grid-4x3">
+                        <div style="background: tomato">1</div>
+                        <div style="background: turquoise">2</div>
+                        <div style="background: tan">3</div>
+                        <div style="background: thistle">4</div>
+                        <div style="background: steelblue">5</div>
+                        <div style="background: tomato">6</div>
+                        <div style="background: turquoise">7</div>
+                        <div style="background: tan">8</div>
+                        <div style="background: thistle">9</div>
+                        <div style="background: steelblue">10</div>
+                    </div>
+                </div>
+            </section>
+            <section id="flex">
+                <h2>display: flex;</h2>
+                <div class="sub-section">
+                    <h3>flex-direction: row;</h3>
+                    <div class="flex flex-row">
+                        <div style="background: tomato">1</div>
+                        <div style="background: turquoise">2</div>
+                        <div style="background: tan">3</div>
+                        <div style="background: thistle">4</div>
+                    </div>
+                </div>
+                <div class="sub-section">
+                    <h3>flex-direction: row-reverse;</h3>
+                    <div class="flex flex-row-reverse">
+                        <div style="background: tomato">1</div>
+                        <div style="background: turquoise">2</div>
+                        <div style="background: tan">3</div>
+                        <div style="background: thistle">4</div>
+                    </div>
+                </div>
+                <div class="next-to-each-other">
+                    <div class="sub-section">
+                        <h3>flex-direction: column;</h3>
+                        <div class="flex flex-column">
+                            <div style="background: tomato">1</div>
+                            <div style="background: turquoise">2</div>
+                            <div style="background: tan">3</div>
+                            <div style="background: thistle">4</div>
+                        </div>
+                    </div>
+                    <div class="sub-section">
+                        <h3>flex-direction: column-reverse;</h3>
+                        <div class="flex flex-column-reverse">
+                            <div style="background: tomato">1</div>
+                            <div style="background: turquoise">2</div>
+                            <div style="background: tan">3</div>
+                            <div style="background: thistle">4</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="spacing-section">
+                    <div class="sub-section">
+                        <h3>flex-direction: row; justify-content: center;</h3>
+                        <div class="flex flex-row" style="justify-content: center">
+                            <div style="background: tomato">1</div>
+                            <div style="background: turquoise">2</div>
+                            <div style="background: tan">3</div>
+                            <div style="background: thistle">4</div>
+                        </div>
+                    </div>
+                    <div class="sub-section">
+                        <h3>flex-direction: row; justify-content: space-between;</h3>
+                        <div class="flex flex-row" style="justify-content: space-between">
+                            <div style="background: tomato">1</div>
+                            <div style="background: turquoise">2</div>
+                            <div style="background: tan">3</div>
+                            <div style="background: thistle">4</div>
+                        </div>
+                    </div>
+                    <div class="sub-section">
+                        <h3>flex-direction: row; justify-content: space-around;</h3>
+                        <div class="flex flex-row" style="justify-content: space-around">
+                            <div style="background: tomato">1</div>
+                            <div style="background: turquoise">2</div>
+                            <div style="background: tan">3</div>
+                            <div style="background: thistle">4</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="spacing-section next-to-each-other">
+                    <div class="sub-section">
+                        <h3>flex-direction: column; align-items: flex-start;</h3>
+                        <div class="flex flex-column" style="align-items: flex-start">
+                            <div style="background: tomato">1</div>
+                            <div style="background: turquoise">2</div>
+                            <div style="background: tan">3</div>
+                            <div style="background: thistle">4</div>
+                        </div>
+                    </div>
+                    <div class="sub-section">
+                        <h3>flex-direction: column; align-items: center;</h3>
+                        <div class="flex flex-column" style="align-items: center">
+                            <div style="background: tomato">1</div>
+                            <div style="background: turquoise">2</div>
+                            <div style="background: tan">3</div>
+                            <div style="background: thistle">4</div>
+                        </div>
+                    </div>
+                    <div class="sub-section">
+                        <h3>flex-direction: column; align-items: flex-end;</h3>
+                        <div class="flex flex-column" style="align-items: flex-end">
+                            <div style="background: tomato">1</div>
+                            <div style="background: turquoise">2</div>
+                            <div style="background: tan">3</div>
+                            <div style="background: thistle">4</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="margin-padding">
+                <h2>Margin and padding</h2>
+                <div class="mp-container">
+                    <div class="box-margin">
+                        <div class="box-padding">
+                            <div class="box-element">HTML Element</div>
+                        </div>
+                    </div>
+                    <div class="legend">
+                        <h3>Margin & padding legend</h3>
+                        <div class="legend-item">
+                            <div style="background: tan"></div>
+                            <p>margin</p>
+                        </div>
+                        <div class="legend-item">
+                            <div style="background: turquoise"></div>
+                            <p>padding</p>
+                        </div>
+                        <div class="legend-item">
+                            <div style="background: tomato"></div>
+                            <p>html element</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

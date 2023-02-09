@@ -1,0 +1,96 @@
+:root {
+    /* Variables */
+    --shadow: 5px 10px rgba(0, 0, 0, 0.2);
+    --thicc-border: 5px solid rgba(0, 0, 0, 0.2);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Courier New", Courier, monospace;
+
+    background: #222;
+    color: white;
+}
+
+*,
+*::before,
+*::after {
+    /* This is a reset that everybody does */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    color: white;
+    background: tomato;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column; /* list them from top to bottom */
+    /* flex-direction: row;  list them from left to right */
+
+    max-width: 1500px;
+    width: 90vw; /* 90% of the viewport (window) width */
+
+    /* rgb(red, green blue) red, green & blue go from 0 -> 255 */
+    /* rgba(red, green blue, opacity) opacity goes from 0 -> 1 */
+    background: rgba(255, 255, 255, 0.05);
+
+    /* Center the container horizontally without "display: flex;" */
+    margin: 0 auto;
+
+    counter-reset: h2counter;
+}
+
+section {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.sub-section {
+    margin-bottom: 100px;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    margin: 30px 0;
+}
+
+h3 {
+    margin: 20px 0;
+}
+h2::before {
+    content: counter(h2counter) ". ";
+    counter-increment: h2counter;
+}
+
+.grid div,
+.flex div {
+    /* Content ordering */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+
+    /* Typography */
+    font-size: 30px;
+    font-weight: 700;
+
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    border: var(--thicc-border);
+}
+
+.grid div:hover,
+.flex div:hover {
+    transition: transform 300ms;
+    transform: scale(110%);
+}

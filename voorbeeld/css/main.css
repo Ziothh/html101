@@ -1,0 +1,23 @@
+body {
+    font-family: "Courier New", Courier, monospace;
+    margin: 0;
+}
+
+.container {
+    background: tomato;
+    width: 90vw;
+}
+
+.grid {
+    background: turquoise;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid div {
+    width: 30%;
+
+    background: greenyellow;
+    border: 5px solid black;
+}

@@ -1,0 +1,36 @@
+nav {
+    display: flex;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    margin-bottom: 50px;
+
+    padding: 20px 60px;
+
+    background: tomato;
+
+    box-shadow: var(--shadow);
+    border: var(--thicc-border);
+}
+
+nav .logo {
+    margin-right: auto;
+    font-size: 30px;
+    font-weight: 600;
+    height: min-content;
+}
+
+nav ol {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    font-weight: 600;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}

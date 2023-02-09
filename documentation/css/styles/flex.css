@@ -1,0 +1,43 @@
+.flex {
+    display: flex;
+
+    border: var(--thicc-border);
+}
+
+.flex div {
+    height: 200px;
+    width: 200px;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.next-to-each-other {
+    display: flex;
+    gap: 50px;
+}
+
+.next-to-each-other > div {
+    width: 100%;
+}
+
+.flex-column {
+    flex-direction: column;
+    /* 
+    Going from row to column
+    swappes the effects of
+    justify-content & align-items around
+    */
+}
+.flex-column-reverse {
+    flex-direction: column-reverse;
+}
+
+.spacing-section > .sub-section {
+    margin: 0;
+}
